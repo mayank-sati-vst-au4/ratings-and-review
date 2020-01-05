@@ -32,3 +32,18 @@ fs.writeFile(path.join(__dirname, '/test', 'hello.txt'), 'My name is mayank', er
 });
 
 });
+
+fs.readFile(path.join(__dirname, '/test', 'hello.txt'), 'utf8', (error,data) =>{
+    if(error) throw error;
+    console.log('file read');
+    console.log(data);
+
+});
+
+fs.rename(path.join(__dirname, '/test', 'hello.txt'), path.join(__dirname, '/test', 'helloworld.txt'), error =>{
+    if(error) throw error;
+    console.log('file renamed by node');
+
+});
+// warning: LF will be replaced by CRLF in Jan4practice/package-lock.json.
+// The file will have its original line endings in your working directory
