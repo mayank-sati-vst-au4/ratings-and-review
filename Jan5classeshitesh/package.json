@@ -1,0 +1,11 @@
+{
+  "name": "jan5classesdojo",
+  "version": "1.0.0",
+  "description": "Classes in javascript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mayank Sati",
+  "license": "ISC"
+}
