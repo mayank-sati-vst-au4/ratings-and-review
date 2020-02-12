@@ -1,0 +1,95 @@
+<!--<!DOCTYPE html>-->
+<html>
+    <head>
+        <title>
+
+        </title>
+    </head>
+    <body>
+        <div id="root"></div>
+       
+
+        <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+        <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+ 
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> 
+
+
+<!--         <script type="text/javascript">
+        /* 
+        const rootElement = document.getElementById("root");
+
+        const hello = document.createElement("span");
+        //console.log("See index.js is working");
+        
+        hello.textContent="Hello World";
+        const button = document.createElement("button");
+        button.textContent = "Waiting to be clicked";
+        button.addEventListener("click", function(){
+            hello.textContent ="Hello Mayank";
+    })
+
+        rootElement.appendChild(button);
+        rootElement.appendChild(hello);
+ */
+        // THIS is FIRST WAY bY DOCUMENT.CREATEelement
+        // SECOND WAY REACT.createElement
+
+        const rootElement = document.getElementById("root");
+        const hello1 = document.createElement("span");
+
+        // 1st wway RENDERS to webpage
+        hello1.textContent = "\n This is hello1";
+        const hello2 = React.createElement("span", {className: "myclass"}, "Hello World");
+        console.log("Are you working", hello1,hello2);
+        //rootElement.append(hello);
+
+        // Second way renders to homepage
+        ReactDOM.render(hello2, rootElement);
+        rootElement.appendChild(hello1);
+</script>
+ -->
+
+<!-- <script type="text/babel">
+        //  This is the THIRD APPRAOCH here
+
+        const rootElemen = document.getElementById("root");
+        // Directly adding elements to a variable by using babel
+        const hello = <span>Hello World This is a span</span> // JSX Javascript Expression
+        const footer = (
+        <div className="container-fluid p-0">
+        <div className="my-footer">
+            Copyright 2020    
+        </div>
+        </div>
+  
+        );
+
+        const button = (
+            <button> Click me I am second</button>
+        );
+        // Creating a wrapper and putting both the things in wrapper to render
+        // them together as render can send only 1
+        const div = (
+            <div>
+            {footer}
+            {button}    
+            </div>
+        );
+        // React DOM renders it
+        ReactDOM.render(div, rootElemen)
+        //ReactDOM.render(hello, rootElemen); 
+
+</script> -->
+<script type="text/babel" src="todo.js"></script>
+
+    </body>
+</html>
+
+
+<!--8077684657-->
+
