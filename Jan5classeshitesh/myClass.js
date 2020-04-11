@@ -21,7 +21,7 @@ class User{
         const fullname = middlename.split(' ');
         console.log('New name for adding middlename',fullname);
         this.middlename = fullname[1];
-        console.log(`Updated name: ${this.firstname} ${this.middlename} ${this.lastname}`);
+        console.log(`Updated name: ${this.firstname}  ${this.middlename}  ${this.lastname}`);
     }
 }
 
