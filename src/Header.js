@@ -5,7 +5,7 @@ import ShoppingBasketIcon from '@material-ui/icons/ShoppingCart';
 function Header() {
     return (
         <div className="header">
-            <img className="header_logo" src="http://media.corporate-ir.net/media_files/IROL/17/176060/Oct18/Amazon%20logo.PNG"/>
+            <img className="header_logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD8LLI9539ww9XiGFpENy5J3niaEPQlAwbqw&usqp=CAU"/>
 
             <div className="header_search">
                 <input

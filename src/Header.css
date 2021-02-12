@@ -12,7 +12,7 @@
     width: 100px;
     object-fit: contain; /* for maintaining aspect ratio */
     margin: 0 20px;
-    margin-top: 12px;
+    margin-top: 9px;
 }
 .header_search{
     display: flex;
