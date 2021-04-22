@@ -1,17 +1,33 @@
 import React from 'react';
+import Subtotal from './Subtotal';
+import './Checkout.css';
+import {useStateValue} from './StateProvider';
+import CheckoutProduct from './CheckoutProduct';
 
 function Checkout() {
+    const [{basket}, dispatch] = useStateValue();
+
     return (
         <div className='checkout'>
             <div className='checkout_left'>
                 <img 
                     className='checkout_add'
-                    src=''
+                    src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRL1P7ADd6ERY85YaRwgAZtiXA8t30m-cDmvA&usqp=CAU'
                     alt='no img'
                 />
                 <div className='checkout_title'>
                     <h3>Your Amazon Cart </h3>
-                    {/* Cart Items */}
+
+                    
+                    {basket.map(item => (
+                        <CheckoutProduct
+                            id={item.id}
+                            title={item.title}
+                            image={item.image}
+                            price={item.price}
+                            rating={item.rating}
+                        />
+                    ))}
                     {/* Cart Items */}
                     {/* Cart Items */}
                     {/* Cart Items */}
@@ -19,8 +35,9 @@ function Checkout() {
             </div>
             <div className='checkout_right'>
                 <h4 > Total Amount</h4>
+                <Subtotal/>
 
-                
+
             </div>
         </div>
     )

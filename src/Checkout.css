@@ -1,4 +1,16 @@
 .checkout{
+display: flex;
+
+}
+.checkout_ad{
+
+}
+.checkout_left{
+
+}
+
+.checkout_right{
     display: flex;
-    
+    flex-direction: column;
+    float: right;
 }
