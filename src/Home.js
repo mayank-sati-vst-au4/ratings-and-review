@@ -12,32 +12,32 @@ function Home() {
                 <div className='home_row'>
                     <Product 
                         title='The lean Startup' 
-                        price={99} 
+                        price={100} 
                         image='https://images-na.ssl-images-amazon.com/images/I/81-QB7nDh4L.jpg' 
                         rating={5}/>
                     <Product
-                        title='The lean Startup' 
-                        price={99} 
+                        title='The Startup' 
+                        price={200} 
                         image='https://images-na.ssl-images-amazon.com/images/I/81-QB7nDh4L.jpg' 
-                        rating={5}
+                        rating={3}
                     />
                 </div>
                 <div className='home_row'>
                     <Product
-                        title='The lean Startup' 
-                        price={99} 
+                        title='The' 
+                        price={50} 
                         image='https://images-na.ssl-images-amazon.com/images/I/81-QB7nDh4L.jpg' 
                         rating={5}
                     />
                     <Product
-                        title='The lean Startup' 
-                        price={99} 
+                        title='The lean Start' 
+                        price={80} 
                         image='https://images-na.ssl-images-amazon.com/images/I/81-QB7nDh4L.jpg' 
-                        rating={5}
+                        rating={4}
                     />
                     <Product
-                        title='The lean Startup' 
-                        price={99} 
+                        title='The lean Startups' 
+                        price={20} 
                         image='https://images-na.ssl-images-amazon.com/images/I/81-QB7nDh4L.jpg' 
                         rating={5}
                     />
