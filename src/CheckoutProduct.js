@@ -30,7 +30,7 @@ function CheckoutProduct({ id, image, title, price, rating}) {
                     .fill()
                     .map((_, i) =>(
                     // .map((_,i) =>(
-                        <p> * </p>
+                        <p> &#x1F31F; </p>
                     ))}
 
                 </div>

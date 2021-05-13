@@ -1,4 +1,4 @@
-import { StateContext } from "./StateProvider";
+import { StateContext, useStateValue } from "./StateProvider";
 
 export const initialState = {
     basket: [],

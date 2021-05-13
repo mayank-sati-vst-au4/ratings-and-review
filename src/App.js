@@ -3,14 +3,17 @@ import './App.css';
 import Header from './Header';
 import Home from './Home';
 import Checkout from './Checkout';
-import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import {useLocation, BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import Login from './Login';
+import Payment from './Payment'
 import { auth } from './firebase';
 import { useStateValue} from './StateProvider';
+import { Flipper, Flipped} from 'react-flip-toolkit';
 
 
 function App() {
 
+  // const location = useLocation();
   const [{}, dispatch] = useStateValue();
 
   useEffect(() => {
@@ -37,6 +40,7 @@ function App() {
   }, [])
   return (
   // BEM Convention
+  //<Flipper flipKey={location.pathname}>
   <Router>
     <div className="App">
       {/* <h1>Hello</h1> */}
@@ -51,6 +55,10 @@ function App() {
           <Header/>
           <Checkout/>
         </Route>
+        <Route path = "/payment">
+          <Header/>
+          <Payment />
+        </Route>
         <Route path='/'>
           {/* <Header /> */} {/* Header removed and taken to outside router and switch*/}
           <Header/>
@@ -59,6 +67,7 @@ function App() {
         </Switch>
     </div>
   </Router>
+  //</Flipper>
   );
 }
 
