@@ -8,8 +8,13 @@ import Login from './Login';
 import Payment from './Payment'
 import { auth } from './firebase';
 import { useStateValue} from './StateProvider';
+import { loadStripe } from '@stripe/stripe-js'
+import { Elements } from '@stripe/react-stripe-js'
 import { Flipper, Flipped} from 'react-flip-toolkit';
 
+const promise = loadStripe(
+ "pk_test_51Iqep6SIaGiN0jalnEA9NAlQeHI3DpEYQaylqLY2P9wXSOPm1ZLd6vnVdDOdaxpHywATltIQwoLEZ5z327tFb9kP00nzTp4VBk"
+);
 
 function App() {
 
@@ -57,7 +62,9 @@ function App() {
         </Route>
         <Route path = "/payment">
           <Header/>
-          <Payment />
+          <Elements stripe={promise}>
+            <Payment />
+          </Elements>
         </Route>
         <Route path='/'>
           {/* <Header /> */} {/* Header removed and taken to outside router and switch*/}
